@@ -1,34 +1,36 @@
-![MoonOSX](https://raw.githubusercontent.com/MoonOSX/MoonOSXStuff/master/img/moonosx-banner-XDA.png)
+![Moon Open Stars Project](https://raw.githubusercontent.com/MoonOSX/MoonOSXStuff/master/img/moonosx-banner-XDA.png)
 
-Download the Source
+Syncing the source
 ===================
 
-Please read the [AOSP building instructions](http://source.android.com/source/index.html) before proceeding.
+Please read the following before proceeding:
 
-Initializing Repository
------------------------
+* [Requirements](https://source.android.com/setup/build/requirements)
+* [Installing dependencies](https://source.android.com/setup/build/initializing)
+* [Installing repo](https://source.android.com/setup/build/downloading)
 
-Initiate core trees without any device/kernel/vendor:
+Initialize the repository:
 ```bash
-repo init -u https://github.com/MoonOSX/manifest.git -b pie
+repo init -u https://github.com/MoonOSX/moon.git -b pie
 ```
 
 Then to sync up:
 ```bash
-repo sync -c -f -j4 --force-sync
+repo sync -c -f --force-sync
 ```
-***
 
 Building
---------
+========
 
-After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on
-how to build.
+After you have finished syncing, please read the [AOSP building instructions](https://source.android.com/setup/build/building) on how to build.
 
-You can also build for specific devices (eg. montana) like this:
+You can also build for specific devices like this:
 ```bash
 . build/envsetup.sh
-lunch aosp_montana-userdebug
+lunch aosp_$devicecodename-userdebug
 mka bacon -j4
 ```
+
+In which `$devicecodename` would be your device's codename (e.g. `bacon` for the OnePlus One).
+
 Remember to `make clobber && make clean` every now and then!
