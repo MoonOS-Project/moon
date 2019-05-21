@@ -31,13 +31,13 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="moonosx" />
 
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="moonosx" />
+  <project path="packages/apps/Gallery" name="packages_apps_Gallery" groups="pdk-fs" remote="moonosx" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs" remote="moonosx" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="moonosx" />
 
   <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" remote="moonosx" />
 
   <project path="vendor/moon" name="vendor_moon" remote="moonosx" />
-  
-  <project path="lineage-sdk" name="moonosx-sdk" remote="moonosx" />
 
   <project path="packages/apps/LineageParts" name="packages_apps_CustomParts" remote="moonosx" />
   <project path="packages/apps/MoonOSXOTA" name="packages_apps_MoonOSXOTA" remote="moonosx" />
