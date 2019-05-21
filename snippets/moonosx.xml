@@ -32,6 +32,7 @@
 
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="moonosx" />
   <project path="packages/apps/Gallery" name="packages_apps_Gallery" groups="pdk-fs" remote="moonosx" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs" remote="moonosx" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="moonosx" />
 
   <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" remote="moonosx" />
