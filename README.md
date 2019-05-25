@@ -16,7 +16,7 @@ repo init -u https://github.com/MoonOSX/moon.git -b pie
 
 Then to sync up:
 ```bash
-repo sync -c -f --force-sync
+repo sync -c -f -j$(nproc --all) --force-sync
 ```
 
 Building
